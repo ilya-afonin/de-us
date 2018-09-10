@@ -1,2 +1,92 @@
 //default settings
 
+//default settings
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
+  text-decoration: none;
+  outline: none;
+  // appearance: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Geometria';
+  overflow-x: hidden;
+}
+
+.page {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+a,
+button {
+  transition: opacity .3s, color .3s, border-color .3s, background-color .3s;
+}
+
+.container {
+  position: relative;
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 30px;
+  letter-spacing: 0.015em;
+}
+
+span.input-error {
+  display: none !important;
+}
+
+hr {
+  margin-left: -100px;
+  margin-right: -100px;
+  border: none;
+  border-top: 1px solid #F2F2F2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.unscrolled {
+  overflow: hidden;
+}
+
+.tmp_json {
+  display: none;
+}
+
+.flip-horizontal {
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}

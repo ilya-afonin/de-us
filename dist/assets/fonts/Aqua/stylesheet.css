@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Aqua Grotesque';
+    src: url('subset-AquaGrotesque.eot');
+    src: local('Aqua Grotesque'), local('AquaGrotesque'),
+        url('subset-AquaGrotesque.eot?#iefix') format('embedded-opentype'),
+        url('subset-AquaGrotesque.woff2') format('woff2'),
+        url('subset-AquaGrotesque.woff') format('woff'),
+        url('subset-AquaGrotesque.ttf') format('truetype'),
+        url('subset-AquaGrotesque.svg#AquaGrotesque') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+

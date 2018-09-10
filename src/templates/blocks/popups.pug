@@ -1,0 +1,30 @@
+div.popup#callbackPopup
+	div.popup__container
+		div.popup__closer
+		div.popup__title
+			div.s-title хотите работать с нами?
+		div.popup__c-form
+			div.c-form.c-form--grey
+				form.c-form__form#callback
+					div.c-form__line
+						input(type="text" placeholder='E-mail' name='mail').c-form__input.c-form__input--half.validate__EMAIL
+						input(type="text" placeholder='Телефон' name='phone').c-form__input.c-form__input--half.phone.validate__PHONE
+					div.c-form__line
+						input(type="text" placeholder='Имя' name='name').c-form__input.validate__NAME
+					div.c-form__line
+						textarea(placeholder='Что бы вы хотели?' name='placeholder').c-form__textarea
+					div.c-form__bottom
+						div.c-form__bottom-half
+							input(type="checkbox" id='check_2' name='check_2' checked).c-form__checkbox.validate__CHECKBOX
+							label(for="check_2").c-form__label Согласен на обработку персональных данных
+						div.c-form__link
+							button(type='submit').link.link--bold.link--arrowed Отправить
+
+
+
+div.popup.popup--result#result
+	div.popup__container
+		div.popup__closer
+		div.popup__title
+			div.s-title ваше сообщение отправлено
+		div.popup__result Спасибо за интерес, проявленный к нашей компании.<br/>  В ближайшее время мы свяжемся с Вами.

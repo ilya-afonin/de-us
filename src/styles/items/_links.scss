@@ -1,0 +1,63 @@
+.link {
+  position: relative;
+  color: #000;
+  letter-spacing: 0.05em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--bold {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  &--light {
+    font-weight: 300;
+  }
+
+  &--arrowed {
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: 10px;
+      width: 14px;
+      height: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../images/static/arrow.svg);
+      transition: transform .3s;
+    }
+
+    &:hover {
+
+      &:after {
+        transform: translateX(10px);
+      }
+    }
+  }
+
+  &--white {
+    color: #fff;
+
+    &:after {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  &--opener {
+
+    &:after {
+      content: '';
+      display: inline-block;
+      margin-left: 10px;
+      width: 14px;
+      height: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(../images/static/faq-arrow.svg);
+      transition: transform .3s;
+    }
+  }
+}
