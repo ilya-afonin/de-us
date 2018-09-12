@@ -13,15 +13,8 @@
       <header class="header header--scrolling">
         <div class="container">
           <div class="header__row"><a class="header__logo link" href="_index.html">deus</a>
-            <nav class="header__nav">
-              <ul>
-                <li><a href="#">Кейсы</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Услуги</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
-            <div class="header__phone"><a href="tel:+74951034351">+7 495 103 43 51</a></div>
+            <nav class="header__nav"><a class="link header__nav-link" href="works.html">Кейсы</a><a class="link header__nav-link" href="about.html">О нас</a><a class="link header__nav-link" href="services.html">Услуги</a><a class="link header__nav-link" href="contacts.html">Контакты</a></nav>
+            <div class="header__phone header__button"><a class="link header__nav-link" href="tel:+74951034351">+7 495 103 43 51</a></div>
             <div class="header__buttons">
               <div class="header__burger">
                 <div class="header__burger-bar"></div>
@@ -35,24 +28,28 @@
       <div class="preloader"><span class="spinner"></span></div>
       <div class="content">
         <div class="container">
-          <div class="i-welcome">
-            <div class="welcome__bg" style="background-image: url(assets/images/content/video.jpg)"></div>
-            <div class="welcome__filter"></div>
-            <video class="welcome__video i-section__video" autoplay muted loop>
-              <source src="assets/images/content/video.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
-            </video>
+          <div class="welcome">
             <div class="welcome__inner">
-              <div class="welcome__text">Интерактивное агентство</div>
+              <h1 class="welcome__text">Интерактивное агентство</h1>
               <div class="welcome__header-p">Мы занимаемся дизайном цифровых интерфейсов, разработкой и поддержкой сайтов</div>
               <div class="btn welcome__btn" href="about.html">Связаться с нами</div>
+            </div>
+            <div class="welcome__right-block">
+              <div class="welcome__bg" style="background-image: url(assets/images/content/video.jpg)"></div>
+              <div class="welcome__filter"></div>
+              <video class="welcome__video" autoplay muted loop>
+                <source src="assets/images/content/video.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+              </video>
             </div>
           </div>
         </div>
       </div>
       <footer class="footer">
         <div class="container">
-          <div class="footer__inner"><a class="footer__projects" href="projects.html">Смотреть проекты</a>
-            <div class="footer__links"><a class="footer__link" href="https://facebook.com">Facebook</a><a class="footer__link" href="https://facebook.com">Behance</a></div><a class="footer__download" href="assets/files/presentation.pdf">Скачать презентацию</a>
+          <div class="footer__inner"><a class="footer__projects link" href="projects.html">Смотреть проекты</a>
+            <div class="welcome__right-block">
+              <div class="footer__links"><a class="footer__link" href="https://facebook.com">Facebook</a><a class="footer__link" href="https://facebook.com">Behance</a></div><a class="footer__download link" href="assets/files/presentation.pdf">Скачать презентацию</a>
+            </div>
           </div>
         </div>
       </footer>

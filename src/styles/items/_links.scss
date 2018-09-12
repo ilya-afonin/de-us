@@ -1,15 +1,13 @@
 .link {
   position: relative;
   color: #000;
-  letter-spacing: 0.05em;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   &--bold {
     font-weight: 700;
-    text-transform: uppercase;
-    font-size: 13px;
+    font-size: 18px;
   }
 
   &--light {
