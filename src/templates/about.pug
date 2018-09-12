@@ -1,23 +1,100 @@
-doctype html
-html(lang="ru")
-	head
-		meta(charset='utf-8')
-		meta(http-equiv='X-UA-Compatible",content="IE=edge')
-		meta(name='viewport',content='width=device-width, initial-scale=1')
+extends layout
 
-		block title
-			title default title
+block title
+	title
 
-		link(rel='stylesheet', href='assets/css/main.css')
-		link(rel='stylesheet', href='assets/css/media.css')
+block header
+	include blocks/header
 
-	body
-		div.page
-			include blocks/header
-			div.content
-				block content
+block content
+	div.about
+		section.s-section.s-section--about
+			div.container
+				aside.sideblock
+					h4.about__text Мы - это интерактивное агентство, которое разрабатывает персональные решения для коммуникации бренда в Интернете.
+				div.content-wrapper
+					div.about__text
+						| Мы уверены, что проекты делают не компании, а люди. Поэтому особое внимание уделяем формированию команды и построению процесса работы над проектом.
+						| Наша команда имеет многолетний опыт работы на различных задачах из многих секторов экономики, от небольших start-up проектов до крупных финансовых
+						| и государственных учреждений.
+						| <br/><br/>
+						| Мы уверены, что проекты делают не компании, а люди. Поэтому особое внимание уделяем формированию команды и построению процесса работы над проектом.
+						| Наша команда имеет многолетний опыт работы на различных задачах из многих секторов экономики, от небольших start-up проектов до крупных финансовых
+						| и государственных учреждений.
+					div.about__digits
+						div.about__digit-item
+							div.about__digit 40
+							div.about__digit-text Место рейтинг креативности веб-студий Москвы
+						div.about__digit-item
+							div.about__digit 80
+							div.about__digit-text Место рейтинг разработчиков Mobile Friendly сайтов
+						div.about__digit-item
+							div.about__digit 39
+							div.about__digit-text Выполненных проектов
+						div.about__digit-item
+							div.about__digit 2
+							div.about__digit-text Офис в Москве и Екатеринбурге
+		section.s-section.s-section--honors
+			div.container
+				aside.sideblock
+					h2.h-section__caption.link.link--arrowed Награды
+					div.h-section__describe Наша работа не остается
+						| не замеченной. За 3 года
+						| мы собрали большую коллекцию международных наград.
+						span.color-green Awwwards,
+						span.color-blue CSS Design Awards,
+						span.color-red	CSS Winner...
+					div.s-section__nav.s-arrows
+				div.content-wrapper
+					div.h-slider
+						div.h-slider__scene.owl-carousel
 
+							div.h-slider__slide
+								div.h-slider__card
+									div.h-card
+										a(href="#").h-card__link
+										div.h-card__image-wrapper
+											div(style='background-image:url(assets/images/content/n-card_2.jpg)').h-card__image
+										div.h-card__content
+											div.h-card__title Премия «Лучший проект жилого дома»
 
-			include blocks/footer
+								div(style='background-image: url(assets/images/content/a-slider_1.jpg)').a-slider__bg
 
-		script(src='assets/js/main.js')
+							div.h-slider__slide
+								div.h-slider__card
+									div.h-card
+										a(href="#").h-card__link
+										div.h-card__image-wrapper
+											div(style='background-image:url(assets/images/content/n-card_2.jpg)').h-card__image
+										div.h-card__content
+											div.h-card__title Премия «Лучший проект жилого дома»
+
+								div(style='background-image: url(assets/images/content/a-slider_1.jpg)').a-slider__bg
+		section.s-section.s-section--services
+			div.container
+				aside.sideblock
+					h2.serv-section__caption.link.link--arrowed Услуги
+					div.serv-section__describe Наш приоритет в работе – выстраивание доверительных отношений с заказчиками, поиск и реализация оправданных решений
+				div.content-wrapper
+					div.serv-list
+						div.serv-item
+							h3.serv-item__title Дизайн
+							p.serv__item__text Проектирования и дизайн сайтов, и мобильных приложений, сервисов
+						div.serv-item
+							h3.serv-item__title Разработка
+							p.serv__item__text Backend и Frontend разработка интернет-проектов любой сложности на платформе 1С-Битрикс
+						div.serv-item
+							h3.serv-item__title Support
+							p.serv__item__text Проектирования и дизайн сайтов, и мобильных приложений, сервисов и решений для электронной коммерции
+						div.serv-item
+							h3.serv-item__title Маркетинг
+							p.serv__item__text Проектирования и дизайн сайтов, и мобильных приложений, сервисов и решений для электронной коммерции
+						div.serv-item
+							h3.serv-item__title Дизайн
+							p.serv__item__text Проектирования и дизайн сайтов, и мобильных приложений, сервисов и решений для электронной коммерции
+						div.serv-item
+							h3.serv-item__title Разработка
+							p.serv__item__text Backend и Frontend разработка интернет-проектов любой сложности на платформе 1С-Битрикс и решений для электронной коммерции
+
+block footer
+	include blocks/footer
