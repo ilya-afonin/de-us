@@ -1,0 +1,54 @@
+extends layout
+
+block title
+    title
+
+block header
+    include blocks/header
+
+block content
+    div.container
+        div.works-page
+            nav.works__sections
+                a(href="/works").works__section Все
+                a(href="#").works__section Frontend
+                a(href="#").works__section Backend
+                a(href="#").works__section Design
+                a(href="#").works__section Mobile
+                a(href="#").works__section Support
+                a(href="#").works__section Marketing
+            div.works__list
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work1.png").works__image
+                    div.works__tags Design, Frontend, Backend, Support
+                    a(href="#").works__name Спортивный фитнес журнал CrossFit.ru
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work2.png").works__image
+                    div.works__tags Design
+                    a(href="#").works__name Разработка промо сайта Direct Credit
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work3.png").works__image
+                    div.works__tags UI/UX, Support
+                    a(href="#").works__name Сайт банку Кубань кредит
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work4.png").works__image
+                    div.works__tags Design, Frontend, Backend, Support
+                    a(href="#").works__name Design, Mobile
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work5.png").works__image
+                    div.works__tags Design, Frontend, Backend
+                    a(href="#").works__name Разработка сайта для Credeo
+                div.works__item
+                    a.works__image-link
+                        img(src="assets/images/content/work6.png").works__image
+                    div.works__tags Design, Frontend, Backend
+                    a(href="#").works__name Ответственный Водитель
+
+
+block footer
+    include blocks/footer
