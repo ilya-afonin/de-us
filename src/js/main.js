@@ -2,7 +2,7 @@
 // Подключение библиотек из node_modules
 
 // import 'jquery';
-require('jquery');
+//require('jquery');
 
 $(document).ready(function () {
 
@@ -11,6 +11,9 @@ $(document).ready(function () {
     headerScroll();
     headerMobile();
     hSlider();
+    cSlider();
+    formValidate();
+
     /*mask();
 
     callbackFormValidate();
@@ -48,6 +51,24 @@ $(document).ready(function () {
     fSlider();*/
 
 });
+
+function cSlider() {
+
+    if ($('.c-slider').length > 0) {
+
+        var slider = $('.c-slider__scene');
+
+        slider.each(function () {
+
+            $(this).owlCarousel({
+                items: 16,
+                loop: true,
+                nav: false,
+                dots: true
+            });
+        });
+    }
+}
 
 function hSlider() {
 
@@ -91,6 +112,8 @@ function hSlider() {
     }
 }
 
+
+
 function headerMobile() {
 
     if ($('.header').length > 0 ) {
@@ -122,4 +145,65 @@ function headerScroll() {
             $('.header').removeClass('header--custom');
         }
     });
+}
+
+function formValidate() {
+
+    if ($('#callback').length > 0) {
+
+        var form = $('#callback');
+
+        form.validate({
+            errorElement: 'span',
+            errorClass: 'input-error',
+
+            submitHandler: function () {
+
+                $.when(
+                    $('.popup').not('#result').removeClass('popup--visible')
+                ).done(function (x) {
+
+                    $('#result').addClass('popup--visible')
+                });
+            }
+        });
+
+        $(form).find('.validate__EMAIL').rules('add', {
+
+            email: true,
+            required: true,
+
+            messages: {
+                required: 'Введите email',
+                email: 'Некорректный email'
+            }
+        });
+
+        $(form).find('.validate__NAME').rules('add', {
+
+            required: true,
+
+            messages: {
+                required: 'Заполните поле',
+            }
+        });
+
+        $(form).find('.validate__PHONE').rules('add', {
+
+            required: true,
+
+            messages: {
+                required: 'Заполните поле',
+            }
+        });
+
+        $(form).find('.validate__CHECKBOX').rules('add', {
+
+            required: true,
+
+            messages: {
+                required: 'Подтвердите согласие на обработку данных',
+            }
+        });
+    }
 }

@@ -6,74 +6,7 @@
 	z-index: 20;
 	padding: 8px 0;
 	transition: padding .3s, background-color .3s;
-
-	&--custom,
-	&--fill {
-		padding: 5px 0 5px 0;
-		background-color: #fff;
-		box-shadow: 0 0 40px rgba(0,0,0,0.05);
-
-		.header__logo {
-			opacity: 1;
-		}
-
-		.header__nav-link {
-			color: #000;
-
-			&:before {
-				background: #3c3b3b;
-			}
-
-			&--menu {
-
-				span {
-
-					&:after {
-						filter: brightness(1) invert(0);
-					}
-				}
-			}
-		}
-
-		.header__button {
-
-			&:before {
-				opacity: 1;
-			}
-
-			&:after {
-				opacity: 0;
-			}
-		}
-	}
-
-	&.search-opened {
-
-		.header__search {
-			visibility: visible;
-			opacity: 1;
-			transform: translateY(-50%) translateX(0);
-		}
-
-		.header__button--close {
-			opacity: 1;
-			visibility: visible;
-		}
-
-		.header__button {
-
-			&--search {
-				opacity: 0;
-				visibility: hidden;
-			}
-		}
-
-		.h-search {
-			visibility: visible;
-			opacity: 1;
-			transform: translate(0);
-		}
-	}
+	background-color: #fff;
 }
 
 .header__row {
