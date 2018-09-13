@@ -119,8 +119,6 @@
 
 	&:hover {
 
-		color: #7C7C7C;
-
 		&:before {
 			transform: scale3d(1, 1, 1);
 			transform-origin: left center;
@@ -148,7 +146,6 @@
 .header__button {
 	position: relative;
 	flex-shrink: 0;
-	margin-right: 25px;
 	cursor: pointer;
 	transition: visibility .3s, opacity .3s;
 

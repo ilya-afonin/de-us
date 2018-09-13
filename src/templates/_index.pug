@@ -9,16 +9,21 @@ block header
 block content
 	div.container
 		div.welcome
-			div.welcome__inner
-				h1.welcome__text Интерактивное агентство
-				div.welcome__header-p Мы занимаемся дизайном цифровых интерфейсов, разработкой и поддержкой сайтов
-				div.btn.welcome__btn(href="about.html") Связаться с нами
-			div.welcome__right-block
+			div.welcome__inner-wrapper
+				div.welcome__inner
+					h1.welcome__text Интерактивное агентство
+					div.welcome__header-p Мы занимаемся дизайном цифровых интерфейсов,
+						| <br> разработкой и поддержкой сайтов
+					a(href="about.html" role="button").btn.welcome__btn Связаться с нами
+						span.welcome__arrow_icon
+							<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 12L6 6.92187L1 1.84375" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+			div.welcome__right-block.index__right-block
 				div.welcome__bg(style="background-image: url(assets/images/content/video.jpg)")
 				div.welcome__filter
 				video.welcome__video(autoplay muted loop)
-					source(src="assets/images/content/video.mp4" type='video/mp4' codecs='avc1.42E01E, mp4a.40.2')
-
+					source(src="assets/files/video/video4.mp4" type='video/mp4' codecs='avc1.42E01E, mp4a.40.2')
 
 block footer
 	include blocks/footer-main
