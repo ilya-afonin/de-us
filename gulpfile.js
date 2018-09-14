@@ -205,7 +205,8 @@ gulp.task('watch', function() {
 
 	gulp.watch(config.src.fonts, gulp.parallel('fonts'));
 
-	gulp.watch(config.src.scripts, gulp.series('concat', 'babelify'));
+	//gulp.watch(config.src.scripts, gulp.series('concat', 'babelify'));
+	gulp.watch(config.src.scripts, gulp.parallel('scripts'));
 
 	gulp.watch(config.src.libjs, gulp.parallel('libjs'));
 
@@ -216,7 +217,7 @@ gulp.task('watch', function() {
 
 
 // Обычная сборка
-gulp.task('build', gulp.series('styles', 'templates', 'fonts', 'concat', 'babelify', 'libcss', 'files', 'images', 'clean'));
+gulp.task('build', gulp.series('styles', 'templates', 'scripts', 'fonts', 'libcss', 'files', 'images', 'clean'));
 
 // С минификацией
-gulp.task('build-min', gulp.series(['templates', 'fonts', 'babelify', 'minjs', 'libcss', 'files', 'images', 'clean']));
+gulp.task('build-min', gulp.series(['templates', 'fonts', 'minjs', 'libcss', 'files', 'images', 'clean']));

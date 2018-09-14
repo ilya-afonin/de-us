@@ -640,6 +640,35 @@ button {
     padding: 0 70px;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
+    color: #000;
+}
+
+h2:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    background-color: #0000FF;
+}
+
 p {
     font-size: 16px;
     line-height: 26px;
@@ -675,6 +704,18 @@ img {
     -webkit-filter: FlipH;
     filter: FlipH;
     -ms-filter: "FlipH";
+}
+
+.color-green {
+    color: #31979A !important;
+}
+
+.color-blue {
+    color: #5958A3 !important;
+}
+
+.color-red {
+    color: #E8625E !important;
 }
 
 .btn {
@@ -720,24 +761,6 @@ img {
 
 .link--light {
     font-weight: 300;
-}
-
-.link--arrow {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 48px;
-    font-weight: 500;
-}
-
-.link--arrow:after {
-    content: '';
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    background-color: #0000FF;
 }
 
 .link--white {
@@ -1366,6 +1389,20 @@ aside.sideblock {
     margin-right: 70px;
 }
 
+.content-wrapper {
+    width: calc(100% - 360px);
+}
+
+.s__caption {
+    margin-bottom: 55px;
+}
+
+.s__describe {
+    color: #7C7C7C;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .about__text {
     margin: 0;
 }
@@ -1423,4 +1460,43 @@ aside.sideblock {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.h-slider__scene.owl-carousel .owl-item img {
+    width: auto;
+}
+
+.h-card {
+    position: relative;
+    margin-left: 25px;
+}
+
+.h-card__image-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.h-card__link {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.h-card__title {
+    position: absolute;
+    top: 47px;
+    left: 0;
+    font-size: 2.25rem;
+    line-height: 36px;
+    color: #fff;
+    width: 100%;
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    font-weight: 700;
+    max-width: 252px;
+    z-index: 0;
 }

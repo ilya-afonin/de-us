@@ -92,6 +92,7 @@ function hSlider() {
                 navContainer: navigation,
                 navText: '',
                 navElement: 'a',
+                nestedItemSelector: 'h-slider__slide',
                 navContainerClass: 's-arrows',
                 navClass: ['s-arrows__arrow s-arrows__arrow--prev', 's-arrows__arrow s-arrows__arrow--next'],
                 responsive : {

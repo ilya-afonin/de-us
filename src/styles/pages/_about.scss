@@ -11,6 +11,17 @@ aside.sideblock {
   width: 290px;
   margin-right: 70px;
 }
+.content-wrapper {
+  width: calc(100% - 360px);
+}
+.s__caption {
+  margin-bottom: 55px;
+}
+.s__describe {
+  color: $color-gray;
+  font-size: 18px;
+  line-height: 24px;
+}
 .about__text {
   margin: 0;
 }
@@ -45,4 +56,37 @@ aside.sideblock {
   font-weight: 500;
   display: flex;
   align-items: center;
+}
+.h-section__caption {
+
+}
+.h-slider__scene.owl-carousel .owl-item img {
+  width: auto;
+}
+.h-card {
+  position: relative;
+  margin-left: 25px;
+}
+.h-card__image-wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+}
+.h-card__link {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.h-card__title {
+  position: absolute;
+  top: 47px;
+  left: 0;
+  font-size: 2.25rem;
+  line-height: 36px;
+  color: #fff;
+  width: 100%;
+  text-decoration-line: underline;
+  font-weight: 700;
+  max-width: 252px;
+  z-index: 0;
 }

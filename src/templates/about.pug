@@ -37,13 +37,13 @@ block content
 		section.s-section.s-section--honors
 			div.container
 				aside.sideblock
-					h2.h-section__caption.link.link--arrow Награды
-					div.h-section__describe Наша работа не остается
+					h2.s__caption Награды
+					div.s__describe Наша работа не остается
 						| не замеченной. За 3 года
-						| мы собрали большую коллекцию международных наград.
-						span.color-green Awwwards,
-						span.color-blue CSS Design Awards,
-						span.color-red CSS Winner...
+						| мы собрали большую коллекцию международных наград.&nbsp;
+						span.color-green.bold Awwwards,
+						span.color-blue.bold CSS Design Awards,
+						span.color-red.bold CSS Winner...
 					div.s-section__nav.s-arrows
 				div.content-wrapper
 					div.h-slider
@@ -51,26 +51,34 @@ block content
 							div.h-slider__slide
 								div.h-slider__card
 									div.h-card
-										a(href="#").h-card__link
 										div.h-card__image-wrapper
-											div(style='background-image:url(assets/images/content/honor1.png)').h-card__image
-										div.h-card__content
-											div.h-card__title Премия «Лучший проект жилого дома»
-
+											a(href="#").h-card__link
+												div.h-card__title Honors Mension
+												img(src='assets/images/content/honor1.png').h-card__image
+										a(href="#").color-green.h-card__title.h-card__title--bg Honors Mension
 							div.h-slider__slide
 								div.h-slider__card
 									div.h-card
-										a(href="#").h-card__link
 										div.h-card__image-wrapper
-											div(style='background-image:url(assets/images/content/honor2.png)').h-card__image
-										div.h-card__content
-											div.h-card__title Премия «Лучший проект жилого дома»
+											a(href="#").h-card__link
+												div.h-card__title Special Kusos
+												img(src='assets/images/content/honor2.png').h-card__image
+										a(href="#").color-blue.h-card__title.h-card__title--bg Special Kusos
+							div.h-slider__slide
+								div.h-slider__card
+									div.h-card
+										div.h-card__image-wrapper
+											a(href="#").h-card__link
+												div.h-card__title Special Kusos
+												img(src='assets/images/content/honor2.png').h-card__image
+										a(href="#").color-red.h-card__title.h-card__title--bg Special Kusos
+
 
 		section.s-section.s-section--services
 			div.container
 				aside.sideblock
-					h2.serv-section__caption.link.link--arrow Услуги
-					div.serv-section__describe Наш приоритет в работе – выстраивание доверительных отношений с заказчиками, поиск и реализация оправданных решений
+					h2.s__caption Услуги
+					div.s__describe Наш приоритет в работе – выстраивание доверительных отношений с заказчиками, поиск и реализация оправданных решений
 				div.content-wrapper
 					div.serv-list
 						div.serv-item
@@ -94,8 +102,8 @@ block content
 		section.s-section.s-section--clients
 			div.container
 				aside.sideblock
-					h2.serv-section__caption.link.link--arrow Клиенты
-					div.serv-section__describe Мы помогаем находить идей, в которые верим без сомнения. Честные отношения с клиентом помогают нам в этом.
+					h2.s__caption Клиенты
+					div.s__describe Мы помогаем находить идей, в которые верим без сомнения. Честные отношения с клиентом помогают нам в этом.
 				div.content-wrapper
 					div.clients-slider
 						div.c-slider__scene.owl-carousel
@@ -150,8 +158,8 @@ block content
 		section.s-section.s-section--form
 			div.container
 				aside.sideblock
-					h2.serv-section__caption.link.link--arrow Готовы сотрудничать?
-					div.serv-section__describe Мы будем рады приложить все имеющиеся навыки и знания для комплексного создания и успешного развития вашего проекта или стартапа.
+					h2.s__caption Готовы сотрудничать?
+					div.s__describe Мы будем рады приложить все имеющиеся навыки и знания для комплексного создания и успешного развития вашего проекта или стартапа.
 				div.content-wrapper
 					div.c-form
 						form.c-form__form#callback
