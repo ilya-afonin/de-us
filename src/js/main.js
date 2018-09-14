@@ -54,7 +54,7 @@ $(document).ready(function () {
 
 function cSlider() {
 
-    if ($('.c-slider').length > 0) {
+    if ($('.clients-slider').length > 0) {
 
         var slider = $('.c-slider__scene');
 

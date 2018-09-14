@@ -12,7 +12,7 @@
 	padding: 30px 0;
 }
 
-.footer__projects {
+.footer__projects, .footer__copyright {
 	width: 30%;
 	max-width: 350px;
 	flex-shrink: 0;
@@ -24,7 +24,10 @@
 	align-items: center;
 	justify-content: space-between;
 }
-
+.footer__right-block--one {
+	justify-content: flex-end;
+	text-align: right;
+}
 .footer__top {
 	position: relative;
 	background-color: #171717;

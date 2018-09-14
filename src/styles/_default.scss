@@ -17,6 +17,8 @@
 
 body {
   font-family: 'Geometria';
+  font-size: 16px;
+  line-height: 26px;
   overflow-x: hidden;
 }
 
@@ -35,7 +37,7 @@ body {
 }
 
 .content {
-  padding-top: 94px;
+  padding-top: 70px;
 }
 
 .footer {
@@ -91,4 +93,7 @@ img {
   transform: scale(-1, 1);
   filter: FlipH;
   -ms-filter: "FlipH";
+}
+.color-green {
+  color:
 }

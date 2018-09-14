@@ -1,5 +1,6 @@
 .welcome {
-	height: calc(100vh - 184px);
+	height: calc(100vh - 155px);
+	min-height: 200px;
 	position: relative;
 	display: flex;
 	flex-flow: row nowrap;

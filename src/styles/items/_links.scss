@@ -24,24 +24,28 @@
     font-weight: 300;
   }
 
-  &--arrowed {
+  &--arrow {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 500;
 
     &:after {
       content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
       display: inline-block;
-      margin-left: 10px;
-      width: 14px;
-      height: 10px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-image: url(../images/static/arrow.svg);
-      transition: transform .3s;
+      background-color: $color-accent;
     }
 
     &:hover {
 
       &:after {
-        transform: translateX(10px);
+        //transform: translateX(10px);
+
       }
     }
   }
